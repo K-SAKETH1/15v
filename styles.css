@@ -6,19 +6,22 @@
    background-attachment: fixed;
    background-position: center;
     color: black;
-    display: grid;
-   place-content: center;
-   text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 .quoteCount{
-    padding: 2%;
+    padding: 3%;
     font-family: 'Manrope',sans-serif ;
     font-weight: 800;
 }
-.wrap{
-    display: block;
-    margin: 150px 0;
+.wraps{
     /* position: relative; */
+   
 }
 .quotes{
     /* width: 380px; */
@@ -35,24 +38,36 @@
     margin: 70px 0px 0px;
 }
 .buttondiv{
-    padding: 2%;
+    padding: 3%;
     /* position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,10%); */
 }
 .getQuote{
-    background-color:#C4DDFF;
+    background-color:#181818;
     font-family: 'Manrope',sans-serif ;
-    font-weight: 800;
+    font-weight: 400;
+    color: white;
 }
 #getQuote{
     transition: all 0.5s ease-in-out;
 }
 #getQuote:hover{
-    color: white;
-    background-color: black;
+    background-color: #AAC4FF;
+    color: #000000;
     font-weight: 400;
+    -webkit-box-shadow: -1px -1px 16px 3px rgba(251,242,207,1);
+    -moz-box-shadow: -1px -1px 16px 3px rgba(251,242,207,1);
+    box-shadow: -1px -1px 16px 3px rgba(251,242,207,1);
+}
+#quotes{
+    transition: all 0.5s ease-in-out;
+}
+#quotes:hover,#quotes:focus{
+    -webkit-box-shadow: -1px -1px 16px 3px rgba(251,242,207,1);
+    -moz-box-shadow: -1px -1px 16px 3px rgba(251,242,207,1);
+    box-shadow: -1px -1px 16px 3px rgba(251,242,207,1);
 }
 footer a{
     color: black;
@@ -72,7 +87,7 @@ footer a:hover{
     font-size: 1.2rem;
 }
 @media screen and (min-width:300px) and (max-width:950px) {
-  #wrap{
+  /* #wrap{
     margin: 270px 0;
-  }
+  } */
 }
